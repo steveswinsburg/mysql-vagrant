@@ -8,7 +8,7 @@ A simple vagrant box with MySQL.
 ## Connecting to MySQL
 Host: `10.19.17.12`  
 User: `root`  
-Password: `password`
+Password: `password`  
 Port: `3306`
 
 Ensure that MySQL is not running on your machine before starting up, as there will be a port conflict. Vagrant will soon tell you :)
