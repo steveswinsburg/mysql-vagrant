@@ -15,6 +15,9 @@ sudo service mysqld restart
 # set root password
 sudo /usr/bin/mysqladmin -u root password 'password'
 
+# allow remote access
+mysql -u root -ppassword -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;"
+
 # drop the anonymous users
 mysql -u root -ppassword -e "DROP USER ''@'localhost';"
 mysql -u root -ppassword -e "DROP USER ''@'$(hostname)';"
