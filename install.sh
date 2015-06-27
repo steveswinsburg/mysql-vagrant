@@ -5,7 +5,7 @@
 # if we need any dependencies, install them here
 
 #sudo yum -y update
-sudo yum install -y install mysql-server
+sudo yum -y install mysql-server
 
 # restart mysql
 sudo service mysqld restart
